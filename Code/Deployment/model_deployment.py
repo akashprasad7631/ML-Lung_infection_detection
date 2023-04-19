@@ -16,7 +16,11 @@ st.text("Provide URL of Chest Xray for Pneumonia Detection")
 # @st.cache(allow_output_mutation=True)
 @st.cache_resource
 def load_model():
+<<<<<<< Updated upstream:Deployment/model_deployment.py
     model = tf.keras.models.load_model('https://github.com/akashprasad7631/ML-Lung_infection_detection/blob/main/final_model/efficientnetb0-model.h5')
+=======
+    model = tf.keras.models.load_model('/Users/akashprasad763gmail.com/Downloads/ML-Lung_infection_detection/final_model/efficientnetb0-model.h5')
+>>>>>>> Stashed changes:Code/Deployment/model_deployment.py
     return model
 
 
